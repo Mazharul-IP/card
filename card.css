@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#fff;
+}
+.swiper{
+    width:950px; 
+}
+
+section .card .image{
+    height:140px;
+    width:140px;
+    padding:3px;
+    border-radius: 50%;
+    background-color: purple;
+}
+section .card .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid #fff;
+}
+.card{
+    position:relative;
+    background: #97ea91;
+    border-radius: 20px;
+    width:270px;
+    height:300px;
+    margin:8px;
+    
+}
+.card::before{
+    content: " ";
+    position: absolute;
+    background-color: rgb(136, 5, 136);
+    height:49%;
+    width:100%;
+    border-radius: 20px 20px 0 0;
+    
+    
+}
+.card .card-content{
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+
+}
+.card .media-icon{
+    position: absolute;
+    top:10px;
+    right:14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card .media-icon i{
+    padding:2px;
+    margin-top:10px;
+    color:#fff;
+    opacity: 0.6;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.card .media-icon i:hover{
+    opacity: 1;
+}
+.name-profession .name{
+    font-size: 1.2em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.name-profession .profession{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rating{
+    display:flex;
+    align-items: center;
+    margin:15px;
+}
+.rating i{
+    font-size: 1em;
+    margin:4px;
+    color:purple
+}
+.card .button{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+
+}
+.button button{
+    outline: none;
+    border:none;
+    background-color:rgb(174, 7, 174);
+    border-radius: 10px;
+    padding:5px 15px;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button button:hover{
+    color:rgb(64, 9, 64);
+}
